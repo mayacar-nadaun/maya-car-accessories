@@ -1,0 +1,59 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "images/uploads"
+
+site_url: /
+display_url: /
+
+collections:
+  - name: "site"
+    label: "Website Content"
+    files:
+      - name: "content"
+        label: "Shop Info, Products & Videos"
+        file: "content.json"
+        fields:
+          - label: "Shop Details"
+            name: "shop"
+            widget: "object"
+            fields:
+              - { label: "Shop Name", name: "name", widget: "string" }
+              - { label: "Owner Name", name: "owner", widget: "string" }
+              - { label: "Primary Phone Number", name: "phone_primary", widget: "string" }
+              - { label: "Alternate Phone Number", name: "phone_alternate", widget: "string" }
+              - { label: "Address", name: "address", widget: "string" }
+              - { label: "Shop Timing", name: "timing", widget: "string", hint: "e.g. 9:30 AM – 7:00 PM" }
+              - { label: "Homepage Tagline", name: "hero_tagline", widget: "string" }
+              - { label: "Homepage Description", name: "hero_description", widget: "text" }
+
+          - label: "Products"
+            name: "products"
+            widget: "list"
+            summary: "{{fields.category_label}} — {{fields.name}}"
+            fields:
+              - label: "Category"
+                name: "category"
+                widget: "select"
+                options:
+                  - { label: "Seat Covers", value: "seat" }
+                  - { label: "Steering Wheels", value: "steering" }
+                  - { label: "Alloy Wheels", value: "wheels" }
+                  - { label: "Car Audio", value: "audio" }
+                  - { label: "Performance", value: "performance" }
+                  - { label: "Accessories", value: "accessories" }
+              - { label: "Category Label (shown on card)", name: "category_label", widget: "string" }
+              - { label: "Product Name", name: "name", widget: "string" }
+              - { label: "Product Photo", name: "image", widget: "image" }
+
+          - label: "Work Videos"
+            name: "videos"
+            widget: "list"
+            summary: "{{fields.name}}"
+            fields:
+              - { label: "Clip Title", name: "name", widget: "string" }
+              - { label: "Category Label", name: "category", widget: "string" }
+              - { label: "Video File", name: "video", widget: "file", hint: "Upload an MP4. Keep clips short (under 20s) and under ~5MB for fast loading." }
+              - { label: "Poster / Thumbnail Photo", name: "poster", widget: "image" }
