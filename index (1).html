@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maya Car Accessories &amp; Modification — Nadaun, Hamirpur</title>
+<meta name="description" content="Maya Car Accessories & Modification, Nadaun — alloy wheels, car audio (Sony, Pioneer, Galio, JBL), seat covers, tail lights, wheel covers & full car modification. Call 6230072984.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0a0908;
+    --bg-2:#141210;
+    --bg-3:#1c1815;
+    --accent:#ff4b1f;
+    --accent-2:#ffb020;
+    --text:#f3ece4;
+    --muted:#a89c90;
+    --line:rgba(255,255,255,0.09);
+    --glow: 0 0 40px rgba(255,75,31,0.35);
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:'Manrope',sans-serif;
+    overflow-x:hidden;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,.display{
+    font-family:'Rajdhani',sans-serif;
+    font-weight:700;
+    letter-spacing:0.02em;
+    text-transform:uppercase;
+  }
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 24px;}
+
+  /* reduced motion */
+  @media (prefers-reduced-motion: reduce){
+    *{animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important;}
+    html{scroll-behavior:auto;}
+  }
+
+  /* ---------- NAV ---------- */
+  .nav{
+    position:fixed; top:0; left:0; right:0; z-index:100;
+    display:flex; align-items:center; justify-content:space-between;
+    padding:16px 24px;
+    background:linear-gradient(180deg, rgba(10,9,8,0.85), rgba(10,9,8,0));
+    backdrop-filter:blur(6px);
+  }
+  .nav-brand{
+    display:flex; align-items:center; gap:10px;
+    font-family:'Rajdhani',sans-serif; font-weight:700; font-size:1.15rem; letter-spacing:0.03em;
+  }
+  .nav-brand .dot{width:9px;height:9px;border-radius:50%;background:var(--accent);box-shadow:0 0 12px var(--accent);}
+  .nav-cta{
+    display:flex; gap:10px;
+  }
+  .btn{
+    display:inline-flex; align-items:center; gap:8px;
+    padding:11px 20px;
+    border-radius:999px;
+    font-size:0.85rem; font-weight:700;
+    font-family:'Manrope',sans-serif;
+    letter-spacing:0.02em;
+    border:1px solid var(--line);
+    transition:transform .25s ease, box-shadow .25s ease, background .25s ease;
+    white-space:nowrap;
+  }
+  .btn-primary{background:linear-gradient(135deg,var(--accent),#ff7a1f); color:#0a0908; border:none; box-shadow:0 8px 24px -8px rgba(255,75,31,0.6);}
+  .btn-primary:hover{transform:translateY(-2px); box-shadow:0 12px 28px -6px rgba(255,75,31,0.75);}
+  .btn-ghost{background:rgba(255,255,255,0.03); color:var(--text);}
+  .btn-ghost:hover{background:rgba(255,255,255,0.08); transform:translateY(-2px);}
+  .nav .btn{padding:9px 16px; font-size:0.78rem;}
+  @media (max-width:640px){ .nav-cta .btn-ghost{display:none;} }
+
+  /* ---------- HERO ---------- */
+  .hero{
+    position:relative;
+    min-height:100vh;
+    display:flex; align-items:center;
+    overflow:hidden;
+    background:
+      radial-gradient(ellipse 90% 60% at 50% 0%, #1f140d 0%, var(--bg) 60%);
+  }
+  .hero-glow-layer{
+    position:absolute; inset:0; pointer-events:none; z-index:0;
+    will-change:transform;
+  }
+  .orb{
+    position:absolute; border-radius:50%;
+    filter:blur(70px);
+    opacity:0.55;
+  }
+  .orb-1{width:520px;height:520px; top:-160px; left:-120px; background:radial-gradient(circle, rgba(255,75,31,0.55), transparent 70%); animation:drift1 16s ease-in-out infinite;}
+  .orb-2{width:420px;height:420px; bottom:-140px; right:-100px; background:radial-gradient(circle, rgba(255,176,32,0.4), transparent 70%); animation:drift2 20s ease-in-out infinite;}
+  .orb-3{width:300px;height:300px; top:30%; right:15%; background:radial-gradient(circle, rgba(255,75,31,0.3), transparent 70%); animation:drift3 13s ease-in-out infinite;}
+  @keyframes drift1{ 0%,100%{transform:translate(0,0);} 50%{transform:translate(40px,30px);} }
+  @keyframes drift2{ 0%,100%{transform:translate(0,0);} 50%{transform:translate(-30px,-40px);} }
+  @keyframes drift3{ 0%,100%{transform:translate(0,0) scale(1);} 50%{transform:translate(-20px,25px) scale(1.15);} }
+
+  .beam{
+    position:absolute;
+    width:180%; height:220px;
+    left:-40%;
+    background:linear-gradient(90deg, transparent, rgba(255,200,150,0.10), transparent);
+    transform:rotate(-14deg);
+    filter:blur(2px);
+    pointer-events:none;
+  }
+  .beam-1{top:8%;}
+  .beam-2{top:52%; animation:sweep 9s linear infinite;}
+  @keyframes sweep{
+    0%{transform:rotate(-14deg) translateX(-8%); opacity:0;}
+    10%{opacity:1;}
+    50%{transform:rotate(-14deg) translateX(8%); opacity:0.9;}
+    90%{opacity:0;}
+    100%{transform:rotate(-14deg) translateX(-8%); opacity:0;}
+  }
+
+  .spark{
+    position:absolute; bottom:-10px;
+    width:3px;height:3px; border-radius:50%;
+    background:var(--accent-2);
+    box-shadow:0 0 8px 2px rgba(255,176,32,0.8);
+    animation:rise linear infinite;
+    opacity:0;
+  }
+  @keyframes rise{
+    0%{transform:translateY(0) translateX(0); opacity:0;}
+    10%{opacity:1;}
+    100%{transform:translateY(-90vh) translateX(var(--drift,20px)); opacity:0;}
+  }
+
+  .hero-content{
+    position:relative; z-index:2;
+    width:100%;
+    padding:140px 24px 80px;
+    display:grid;
+    grid-template-columns:1.15fr 0.85fr;
+    gap:20px;
+    align-items:center;
+    perspective:1600px;
+  }
+  .hero-copy{ transform-style:preserve-3d; will-change:transform; transition:transform .15s ease-out; }
+  @media (max-width:960px){
+    .hero-content{grid-template-columns:1fr; padding-top:120px;}
+  }
+
+  /* ---------- 3D DEPTH STACK ---------- */
+  .stack3d{
+    position:relative;
+    height:480px;
+    transform-style:preserve-3d;
+    will-change:transform;
+    transition:transform .15s ease-out;
+  }
+  .stack3d .panel{
+    position:absolute;
+    border-radius:16px;
+    overflow:hidden;
+    border:1px solid rgba(255,255,255,0.12);
+    box-shadow:0 40px 80px -30px rgba(0,0,0,0.8);
+    background:linear-gradient(160deg, var(--bg-3), var(--bg-2));
+    transition:transform .15s ease-out;
+    will-change:transform;
+  }
+  .stack3d .panel img{width:100%;height:100%;object-fit:cover;}
+  .panel-audio img, .panel-brand img{
+    position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:0;
+  }
+  .panel-audio .panel-fade, .panel-brand .panel-fade{
+    position:absolute; inset:0; z-index:1;
+    background:linear-gradient(180deg, rgba(10,9,8,0.15) 0%, rgba(10,9,8,0.92) 100%);
+  }
+  .panel-audio .panel-label, .panel-audio .panel-value,
+  .panel-brand .panel-label, .panel-brand .panel-value{
+    position:relative; z-index:2;
+  }
+  .panel-photo{
+    width:78%; height:60%; top:6%; left:10%;
+    transform:translateZ(0px) rotateY(-6deg) rotateX(4deg);
+    z-index:3;
+  }
+  .panel-audio{
+    width:56%; height:38%; bottom:2%; left:0%;
+    transform:translateZ(70px) rotateY(-10deg) rotateX(-2deg) rotate(-3deg);
+    z-index:4;
+    padding:20px;
+    display:flex; flex-direction:column; justify-content:flex-end;
+  }
+  .panel-brand{
+    width:50%; height:34%; top:0%; right:0%;
+    transform:translateZ(90px) rotateY(10deg) rotateX(6deg) rotate(2deg);
+    z-index:5;
+    padding:18px;
+    display:flex; flex-direction:column; justify-content:flex-end;
+  }
+  .panel-glow{
+    width:70%; height:70%; top:10%; left:14%;
+    transform:translateZ(-90px);
+    background:radial-gradient(circle, rgba(255,75,31,0.45), transparent 70%);
+    filter:blur(50px);
+    border:none; box-shadow:none;
+    z-index:1;
+  }
+  .panel-label{font-size:0.72rem; text-transform:uppercase; letter-spacing:0.08em; color:var(--muted);}
+  .panel-value{font-family:'Rajdhani',sans-serif; font-weight:700; font-size:1.3rem; color:var(--accent-2);}
+  @media (max-width:960px){ .stack3d{display:none;} }
+  .eyebrow{
+    display:inline-flex; align-items:center; gap:8px;
+    font-size:0.78rem; font-weight:700; letter-spacing:0.16em; text-transform:uppercase;
+    color:var(--accent-2);
+    margin-bottom:22px;
+  }
+  .eyebrow::before{content:"";width:22px;height:1px;background:var(--accent-2);}
+  .hero h1{
+    font-size:clamp(2.4rem, 7vw, 5rem);
+    line-height:1.02;
+    max-width:920px;
+    color:var(--text);
+  }
+  .hero h1 span{color:var(--accent);}
+  .hero p.lede{
+    margin-top:24px;
+    max-width:560px;
+    font-size:1.05rem;
+    line-height:1.6;
+    color:var(--muted);
+  }
+  .hero-actions{
+    margin-top:38px;
+    display:flex; gap:14px; flex-wrap:wrap;
+  }
+  .hero-meta{
+    margin-top:56px;
+    display:flex; gap:40px; flex-wrap:wrap;
+  }
+  .hero-meta div{border-left:2px solid var(--line); padding-left:14px;}
+  .hero-meta .num{font-family:'Rajdhani',sans-serif; font-weight:700; font-size:1.6rem; color:var(--accent-2);}
+  .hero-meta .lbl{font-size:0.78rem; color:var(--muted); letter-spacing:0.03em;}
+
+  .scroll-cue{
+    position:absolute; bottom:28px; left:50%; transform:translateX(-50%);
+    display:flex; flex-direction:column; align-items:center; gap:8px;
+    font-size:0.7rem; letter-spacing:0.14em; color:var(--muted);
+    z-index:2;
+  }
+  .scroll-cue .line{width:1px;height:36px;background:linear-gradient(var(--accent), transparent); animation:scrollcue 2s ease-in-out infinite;}
+  @keyframes scrollcue{ 0%{opacity:0.2;} 50%{opacity:1;} 100%{opacity:0.2;} }
+
+  /* ---------- REVEAL (3D perspective flip-in) ---------- */
+  .reveal{
+    opacity:0;
+    transform:perspective(1200px) translateY(36px) rotateX(10deg);
+    transform-origin:50% 100%;
+    transition:opacity .9s cubic-bezier(.16,.8,.3,1), transform .9s cubic-bezier(.16,.8,.3,1);
+  }
+  .reveal.in{ opacity:1; transform:perspective(1200px) translateY(0) rotateX(0deg); }
+  .reveal.d1{transition-delay:0.08s;} .reveal.d2{transition-delay:0.16s;} .reveal.d3{transition-delay:0.24s;} .reveal.d4{transition-delay:0.32s;} .reveal.d5{transition-delay:0.4s;} .reveal.d6{transition-delay:0.48s;}
+
+  /* generic mouse-tilt card (about photo, gallery main, service cards) */
+  .tilt-card{ transition:transform .12s ease-out; will-change:transform; transform-style:preserve-3d; }
+
+  /* ---------- SECTION SHELL ---------- */
+  section{position:relative; padding:110px 0; perspective:1200px;}
+  .section-head{max-width:640px; margin-bottom:56px;}
+  .kicker{
+    font-size:0.78rem; font-weight:700; letter-spacing:0.16em; text-transform:uppercase; color:var(--accent);
+    display:flex; align-items:center; gap:8px; margin-bottom:14px;
+  }
+  .kicker::before{content:"";width:22px;height:1px;background:var(--accent);}
+  .section-head h2{font-size:clamp(1.8rem,4vw,2.6rem); color:var(--text);}
+  .section-head p{margin-top:14px; color:var(--muted); font-size:1rem; line-height:1.6;}
+
+  /* ---------- ABOUT ---------- */
+  .about-grid{
+    display:grid; grid-template-columns:1fr 1fr; gap:64px; align-items:center;
+  }
+  .about-visual{ position:relative; perspective:1400px; }
+  .about-photo{
+    position:relative; border-radius:18px; overflow:hidden;
+    border:1px solid var(--line);
+    box-shadow:0 30px 60px -30px rgba(0,0,0,0.7);
+  }
+  .about-float-card{
+    position:absolute; bottom:-26px; right:-22px; z-index:4;
+    width:190px; padding:18px 20px;
+    background:linear-gradient(160deg, var(--bg-3), var(--bg-2));
+    border:1px solid rgba(255,75,31,0.35);
+    border-radius:14px;
+    box-shadow:0 30px 50px -20px rgba(0,0,0,0.75);
+    transform:translateZ(60px);
+  }
+  .about-float-card .big{font-family:'Rajdhani',sans-serif; font-weight:700; font-size:1.6rem; color:var(--accent-2);}
+  .about-float-card .lbl{font-size:0.72rem; color:var(--muted); margin-top:2px;}
+  @media (max-width:640px){ .about-float-card{display:none;} }
+  .about-photo img{transition:transform .6s ease;}
+  .about-photo:hover img{transform:scale(1.04);}
+  .about-photo::after{
+    content:"";position:absolute;inset:0;
+    background:linear-gradient(180deg, transparent 60%, rgba(10,9,8,0.75));
+    pointer-events:none;
+  }
+  .about-photo .cap{
+    position:absolute; left:18px; bottom:16px; z-index:2;
+    font-size:0.8rem; color:var(--text); font-weight:600;
+  }
+  .about-text h3{font-size:1.5rem; margin-bottom:16px; color:var(--text);}
+  .about-text p{color:var(--muted); line-height:1.75; margin-bottom:16px;}
+  .about-badges{display:flex; gap:14px; flex-wrap:wrap; margin-top:26px;}
+  .badge{
+    border:1px solid var(--line); border-radius:10px; padding:12px 16px;
+    font-size:0.8rem; color:var(--muted); display:flex; align-items:center; gap:8px;
+  }
+  .badge b{color:var(--accent-2); font-family:'Rajdhani',sans-serif; font-size:1rem;}
+  @media (max-width:860px){ .about-grid{grid-template-columns:1fr; gap:36px;} }
+
+  /* ---------- SERVICES ---------- */
+  .services-grid{
+    display:grid; grid-template-columns:repeat(3,1fr); gap:22px;
+  }
+  .card{
+    position:relative;
+    background:linear-gradient(180deg, var(--bg-3), var(--bg-2));
+    border:1px solid var(--line);
+    border-radius:16px;
+    padding:30px 26px;
+    transition:transform .15s ease, box-shadow .3s ease, border-color .3s ease;
+    transform-style:preserve-3d;
+    will-change:transform;
+  }
+  .card:hover{border-color:rgba(255,75,31,0.4); box-shadow:0 20px 40px -20px rgba(255,75,31,0.35);}
+  .card .icon{
+    width:46px;height:46px; border-radius:12px;
+    display:flex; align-items:center; justify-content:center;
+    background:rgba(255,75,31,0.12); color:var(--accent);
+    margin-bottom:20px;
+  }
+  .card h3{font-size:1.15rem; margin-bottom:10px; color:var(--text); letter-spacing:0.01em;}
+  .card p{font-size:0.88rem; color:var(--muted); line-height:1.6;}
+  @media (max-width:860px){ .services-grid{grid-template-columns:1fr 1fr;} }
+  @media (max-width:560px){ .services-grid{grid-template-columns:1fr;} }
+
+  /* ---------- PRODUCT CATALOGUE ---------- */
+  .cat-tabs{
+    display:flex; gap:10px; flex-wrap:wrap; margin-bottom:36px;
+  }
+  .cat-tab{
+    padding:9px 18px; border-radius:999px; border:1px solid var(--line);
+    font-size:0.82rem; font-weight:600; color:var(--muted);
+    background:rgba(255,255,255,0.02); cursor:pointer;
+    transition:all .2s ease;
+  }
+  .cat-tab:hover{color:var(--text); border-color:rgba(255,75,31,0.4);}
+  .cat-tab.active{background:linear-gradient(135deg,var(--accent),#ff7a1f); color:#0a0908; border-color:transparent;}
+
+  .product-grid{
+    display:grid; grid-template-columns:repeat(auto-fill, minmax(230px,1fr)); gap:20px;
+  }
+  .product-card{
+    position:relative; border-radius:16px; overflow:hidden;
+    border:1px solid var(--line);
+    cursor:pointer; aspect-ratio:4/3.1;
+    background:var(--bg-3);
+  }
+  .product-card img{width:100%;height:100%;object-fit:cover; transition:transform .5s ease;}
+  .product-card:hover img{transform:scale(1.08);}
+  .product-card .pc-overlay{
+    position:absolute; inset:0;
+    background:linear-gradient(180deg, transparent 45%, rgba(6,5,4,0.92) 100%);
+    display:flex; flex-direction:column; justify-content:flex-end;
+    padding:16px;
+  }
+  .product-card .pc-cat{font-size:0.68rem; text-transform:uppercase; letter-spacing:0.08em; color:var(--accent-2); margin-bottom:4px;}
+  .product-card .pc-name{font-size:0.92rem; font-weight:700; color:var(--text); line-height:1.3;}
+  .product-card .pc-hint{
+    position:absolute; top:12px; right:12px;
+    width:30px;height:30px;border-radius:50%;
+    background:rgba(0,0,0,0.5); backdrop-filter:blur(4px);
+    display:flex;align-items:center;justify-content:center;
+    font-size:0.85rem; color:var(--text);
+    border:1px solid rgba(255,255,255,0.15);
+  }
+  .product-card[hidden]{display:none;}
+
+  /* ---------- LIGHTBOX (drag-to-tilt 3D viewer) ---------- */
+  .lightbox{
+    position:fixed; inset:0; z-index:1000;
+    background:rgba(6,5,4,0.88);
+    backdrop-filter:blur(10px);
+    display:flex; align-items:center; justify-content:center;
+    opacity:0; pointer-events:none;
+    transition:opacity .3s ease;
+    padding:24px;
+  }
+  .lightbox.open{opacity:1; pointer-events:auto;}
+  .lb-close{
+    position:absolute; top:22px; right:26px;
+    width:42px;height:42px;border-radius:50%;
+    background:rgba(255,255,255,0.06); border:1px solid var(--line);
+    color:var(--text); font-size:1.1rem; cursor:pointer;
+    display:flex; align-items:center; justify-content:center;
+    z-index:3;
+  }
+  .lb-stage{
+    width:min(640px, 88vw); perspective:1200px;
+    display:flex; flex-direction:column; align-items:center; gap:18px;
+  }
+  .lb-frame{
+    position:relative; width:100%; aspect-ratio:4/3.2;
+    border-radius:20px; overflow:hidden;
+    border:1px solid rgba(255,255,255,0.14);
+    box-shadow:0 60px 100px -30px rgba(0,0,0,0.85);
+    transform-style:preserve-3d;
+    touch-action:none;
+    cursor:grab;
+  }
+  .lb-frame:active{cursor:grabbing;}
+  .lb-frame img{width:100%;height:100%;object-fit:cover; pointer-events:none; user-select:none;}
+  .lb-sheen{
+    position:absolute; inset:-40%;
+    background:linear-gradient(115deg, transparent 40%, rgba(255,255,255,0.28) 50%, transparent 60%);
+    mix-blend-mode:overlay;
+    pointer-events:none;
+    transition:transform .05s linear;
+  }
+  .lb-caption{text-align:center;}
+  .lb-caption .name{font-family:'Rajdhani',sans-serif; font-weight:700; font-size:1.3rem; color:var(--text);}
+  .lb-caption .hint{margin-top:6px; font-size:0.8rem; color:var(--muted);}
+  .lb-actions{display:flex; gap:12px;}
+
+  /* ---------- WORK VIDEOS ---------- */
+  .video-grid{
+    display:grid; grid-template-columns:repeat(auto-fill, minmax(220px,1fr)); gap:22px;
+  }
+  .video-card{
+    position:relative; border-radius:16px; overflow:hidden;
+    border:1px solid var(--line);
+    background:var(--bg-3);
+  }
+  .video-card video{width:100%; display:block; aspect-ratio:9/16; object-fit:cover; background:#000;}
+  .video-card.landscape video{aspect-ratio:4/3;}
+  .video-card .vc-label{
+    padding:14px 16px;
+    border-top:1px solid var(--line);
+  }
+  .video-card .vc-cat{font-size:0.68rem; text-transform:uppercase; letter-spacing:0.08em; color:var(--accent-2); margin-bottom:4px;}
+  .video-card .vc-name{font-size:0.9rem; font-weight:700; color:var(--text);}
+  .brands{
+    padding:60px 0;
+    border-top:1px solid var(--line); border-bottom:1px solid var(--line);
+    overflow:hidden;
+  }
+  .marquee{
+    display:flex; gap:0; width:max-content;
+    animation:marquee 22s linear infinite;
+  }
+  .marquee span{
+    font-family:'Rajdhani',sans-serif; font-weight:700; font-size:2.2rem;
+    color:transparent; -webkit-text-stroke:1px rgba(243,236,228,0.35);
+    padding:0 44px; letter-spacing:0.04em; white-space:nowrap;
+  }
+  .marquee span:nth-child(odd){-webkit-text-stroke:1px rgba(255,75,31,0.55);}
+  @keyframes marquee{ from{transform:translateX(0);} to{transform:translateX(-50%);} }
+
+  /* ---------- GALLERY ---------- */
+  .gallery-feature{
+    display:grid; grid-template-columns:1.3fr 1fr; gap:24px; align-items:stretch;
+  }
+  .gallery-main{
+    border-radius:18px; overflow:hidden; position:relative;
+    border:1px solid var(--line);
+  }
+  .gallery-main img{height:100%; object-fit:cover; transition:transform .6s ease;}
+  .gallery-main:hover img{transform:scale(1.05);}
+  .gallery-side{display:flex; flex-direction:column; gap:24px;}
+  .info-tile{
+    flex:1;
+    border:1px solid var(--line); border-radius:18px; padding:28px;
+    background:linear-gradient(160deg, var(--bg-3), var(--bg-2));
+    display:flex; flex-direction:column; justify-content:center;
+  }
+  .info-tile .big{font-family:'Rajdhani',sans-serif; font-weight:700; font-size:2.4rem; color:var(--accent);}
+  .info-tile .lbl{color:var(--muted); font-size:0.85rem; margin-top:6px;}
+  @media (max-width:860px){ .gallery-feature{grid-template-columns:1fr;} }
+
+  /* ---------- CONTACT ---------- */
+  .contact-grid{
+    display:grid; grid-template-columns:1fr 1fr; gap:40px;
+  }
+  .contact-card{
+    border:1px solid var(--line); border-radius:18px; padding:34px;
+    background:linear-gradient(160deg, var(--bg-3), var(--bg-2));
+  }
+  .contact-row{
+    display:flex; align-items:center; gap:16px;
+    padding:16px 0; border-bottom:1px solid var(--line);
+  }
+  .contact-row:last-child{border-bottom:none;}
+  .contact-row .ic{
+    width:40px;height:40px;border-radius:10px;background:rgba(255,75,31,0.12);color:var(--accent);
+    display:flex;align-items:center;justify-content:center;flex-shrink:0;
+  }
+  .contact-row .t{font-size:0.75rem; color:var(--muted); text-transform:uppercase; letter-spacing:0.06em;}
+  .contact-row .v{font-size:1rem; font-weight:600; color:var(--text);}
+  .contact-row a.v:hover{color:var(--accent-2);}
+  .map-wrap{border-radius:18px; overflow:hidden; border:1px solid var(--line); min-height:340px;}
+  .map-wrap iframe{width:100%; height:100%; min-height:340px; border:0; filter:grayscale(0.3) invert(0.92) contrast(0.9);}
+  .contact-actions{margin-top:24px; display:flex; gap:12px; flex-wrap:wrap;}
+
+  /* ---------- FOOTER ---------- */
+  footer{
+    padding:40px 0; border-top:1px solid var(--line);
+    display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:14px;
+  }
+  footer .f-brand{font-family:'Rajdhani',sans-serif; font-weight:700; letter-spacing:0.03em;}
+  footer p{color:var(--muted); font-size:0.82rem;}
+
+  ::selection{background:var(--accent); color:#0a0908;}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-brand"><span class="dot"></span> MAYA CAR ACCESSORIES</div>
+  <div class="nav-cta">
+    <a href="tel:+916230072984" class="btn btn-ghost">Call Shop</a>
+    <a href="https://wa.me/916230072984" target="_blank" rel="noopener" class="btn btn-primary">WhatsApp Us</a>
+  </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="hero">
+  <div class="hero-glow-layer" id="parallaxLayer">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <div class="beam beam-1"></div>
+    <div class="beam beam-2"></div>
+    <div id="sparkField"></div>
+  </div>
+
+  <div class="wrap hero-content">
+    <div class="hero-copy" id="heroCopy">
+      <div class="eyebrow">Nadaun · Hamirpur · Himachal Pradesh</div>
+      <h1>Wheels, Audio &amp; Modification, <span>Done Right.</span></h1>
+      <p class="lede">Maya Car Accessories &amp; Modification is Nadaun's trusted shop for alloy wheels, premium car audio, seat covers, lighting and full car mod work — run by Er. Anshul.</p>
+      <div class="hero-actions">
+        <a href="tel:+916230072984" class="btn btn-primary">Call 6230072984</a>
+        <a href="https://wa.me/916230072984" target="_blank" rel="noopener" class="btn btn-ghost">Chat on WhatsApp</a>
+      </div>
+      <div class="hero-meta">
+        <div><div class="num">4+</div><div class="lbl">Top Brands Stocked</div></div>
+        <div><div class="num">6</div><div class="lbl">Core Services</div></div>
+        <div><div class="num">100%</div><div class="lbl">Local &amp; Trusted</div></div>
+      </div>
+    </div>
+
+    <div class="stack3d" id="stack3d">
+      <div class="panel panel-glow"></div>
+      <div class="panel panel-photo" data-depth="0.02">
+        <img src="shopfront.jpg" alt="Maya Car Accessories shopfront">
+      </div>
+      <div class="panel panel-audio" data-depth="0.05">
+        <img src="speaker_jbl.jpg" alt="Car audio speakers">
+        <div class="panel-fade"></div>
+        <div class="panel-label">Car Audio</div>
+        <div class="panel-value">Sony · Pioneer · JBL</div>
+      </div>
+      <div class="panel panel-brand" data-depth="0.06">
+        <img src="wheels_toyota_set.jpg" alt="Alloy wheels">
+        <div class="panel-fade"></div>
+        <div class="panel-label">Est. finish</div>
+        <div class="panel-value">Alloy Wheels</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-cue"><span>SCROLL</span><span class="line"></span></div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about">
+  <div class="wrap about-grid tilt-scroll">
+    <div class="about-visual reveal">
+      <div class="about-photo tilt-card">
+        <img src="shopfront.jpg" alt="Maya Car Accessories & Modification shopfront in Nadaun">
+        <div class="cap">Our shop — Seri, Culture Road, Nadaun</div>
+      </div>
+      <div class="about-float-card">
+        <div class="big">Er. Anshul</div>
+        <div class="lbl">Shop owner &amp; in-charge</div>
+      </div>
+    </div>
+    <div class="about-text reveal d2">
+      <div class="kicker">About the shop</div>
+      <h3>Run by Er. Anshul, built on trust</h3>
+      <p>For customers across Nadaun and Hamirpur, Maya Car Accessories &amp; Modification is the go-to shop for genuine parts and clean installation work — not guesswork.</p>
+      <p>From a fresh set of alloy wheels to a complete audio upgrade, every job is handled at the shop with the brands customers already trust: Sony, Pioneer, Galio and JBL.</p>
+      <div class="about-badges">
+        <div class="badge">📍 <span>Seri, Culture Road, Nadaun</span></div>
+        <div class="badge">🕘 <span><b>9:30 AM – 7:00 PM</b></span></div>
+        <div class="badge">📞 <b>6230072984</b></div>
+        <div class="badge">📞 <b>9418031500</b></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section id="services">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="kicker">What we do</div>
+      <h2>Everything your car needs, under one roof</h2>
+      <p>Six core services, real brands, and work done by hands that know cars.</p>
+    </div>
+    <div class="services-grid tilt-scroll">
+      <div class="card reveal d1">
+        <div class="icon">⚙️</div>
+        <h3>Alloy Wheels</h3>
+        <p>Wide range of alloy wheel designs and sizes to upgrade your car's stance and looks.</p>
+      </div>
+      <div class="card reveal d2">
+        <div class="icon">🔊</div>
+        <h3>Car Audio Systems</h3>
+        <p>Speakers, subwoofers &amp; sound systems from Sony, Pioneer, Galio and JBL, fitted and tuned.</p>
+      </div>
+      <div class="card reveal d3">
+        <div class="icon">🪑</div>
+        <h3>Seat Covers</h3>
+        <p>Custom-fit seat covers in premium materials for comfort, protection and a cleaner interior.</p>
+      </div>
+      <div class="card reveal d4">
+        <div class="icon">💡</div>
+        <h3>Tail &amp; Head Lights</h3>
+        <p>Upgraded lighting for a sharper look and better visibility on the road.</p>
+      </div>
+      <div class="card reveal d5">
+        <div class="icon">🛞</div>
+        <h3>Wheel Covers &amp; Mats</h3>
+        <p>Wheel covers, floor mats and finishing accessories to complete the look inside and out.</p>
+      </div>
+      <div class="card reveal d6">
+        <div class="icon">🔧</div>
+        <h3>Full Modification</h3>
+        <p>End-to-end car modification work — tell us the vision, we handle the build.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PRODUCTS ================= -->
+<section id="products">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="kicker">In stock now</div>
+      <h2>Browse what's on the shelf</h2>
+      <p>Real photos from the shop — tap any product to view it up close and tilt it in 3D.</p>
+    </div>
+
+    <div class="cat-tabs" id="catTabs">
+      <div class="cat-tab active" data-cat="all">All</div>
+      <div class="cat-tab" data-cat="seat">Seat Covers</div>
+      <div class="cat-tab" data-cat="steering">Steering Wheels</div>
+      <div class="cat-tab" data-cat="wheels">Alloy Wheels</div>
+      <div class="cat-tab" data-cat="audio">Car Audio</div>
+      <div class="cat-tab" data-cat="performance">Performance</div>
+      <div class="cat-tab" data-cat="accessories">Accessories</div>
+    </div>
+
+    <div class="product-grid tilt-scroll" id="productGrid">
+
+      <div class="product-card reveal tilt-card" data-cat="seat" data-name="Blue Sport Seat Covers — Installed Fit">
+        <img src="seat_blue.jpg" alt="Blue sport seat covers installed">
+        <div class="pc-hint">⤢</div>
+        <div class="pc-overlay"><div class="pc-cat">Seat Covers</div><div class="pc-name">Blue Sport Seat Covers</div></div>
+      </div>
+
+      <div class="product-card reveal d1 tilt-card" data-cat="seat" data-name="Brown Premium Seat Covers — Installed Fit">
+        <img src="seat_brown.jpg" alt="Brown premium seat covers installed">
+        <div class="pc-hint">⤢</div>
+        <div class="pc-overlay"><div class="pc-cat">Seat Covers</div><div class="pc-name">Brown Premium Seat Covers</div></div>
+      </div>
+
+      <div class="product-card reveal d2 tilt-card" data-cat="seat" data-name="Seat Covers with Ambient Cabin Lighting">
+        <img src="seat_ambient.jpg" alt="Seat covers with ambient LED lighting">
+        <div class="pc-hint">⤢</div>
+        <div class="pc-overlay"><div class="pc-cat">Seat Covers</div><div class="pc-name">Seat Covers + Ambient Lighting</div></div>
+      </div>
+
+      <div class="product-card reveal d3 tilt-card" data-cat="seat" data-name="Black &amp; Maroon Seat Cover">
+        <img src="seat_black_maroon.jpg" alt="Black and maroon seat cover">
+        <div class="pc-hint">⤢</div>
+        <div class="pc-overlay"><div class="pc-cat">Seat Covers</div><div class="pc-name">Black &amp; Maroon Seat Cover</div></div>
+      </div>
+
+      <div class="product-card reveal d4 tilt-card" data-cat="seat" data-name="White Diamond-Stitch Seat Cover">
+        <img src="seat_white.jpg" alt="White diamond stitch seat cover">
+        <div class="pc-hint">⤢</div>
+        <div class="pc-overlay"><div class="pc-cat">Seat Covers</div><div class="pc-name">White Diamond-Stitch Cover</div></div>
+      </div>
+
+      <div class="product-card reveal d5 tilt-card" data-cat="steering" data-name="MOMO Sport Steering Wheel — 4 Finishes">
+        <img src="steering_4color.jpg" alt="MOMO sport steering wheels in four finishes">
+        <div class="pc-hint">⤢</div>
+        <div class="pc-overlay"><div class="pc-cat">Steering Wheels</div><div class="pc-name">MOMO Sport — 4 Finishes</div></div>
+      </div>
+
+      <div class="product-card reveal tilt-card" data-cat="wheels" data-name="Toyota OEM Alloy Wheel Set">
+        <img src="wheels_toyota_set.jpg" alt="Toyota OEM alloy wheel set of four">
+        <div class="pc-hint">⤢</div>
+        <div class="pc-overlay"><div class="pc-cat">Alloy Wheels</div><div class="pc-name">Toyota OEM Wheel Set</div></div>
+      </div>
+
+      <div class="product-card reveal d1 tilt-card" data-cat="wheels" data-name="Alloy Wheel — Factory Packed">
+        <img src="wheel_single_box.jpg" alt="Alloy wheel factory packed in box">
+        <div class="pc-hint">⤢</div>
+        <div class="pc-overlay"><div class="pc-cat">Alloy Wheels</div><div class="pc-name">Factory-Packed Alloy Wheel</div></div>
+      </div>
+
+      <div class="product-card reveal d2 tilt-card" data-cat="audio" data-name="Sony XS-FB693E 6x9 3-Way Speaker — 420W">
+        <img src="speaker_sony.jpg" alt="Sony XS-FB693E 6x9 speaker box">
+        <div class="pc-hint">⤢</div>
+        <div class="pc-overlay"><div class="pc-cat">Car Audio</div><div class="pc-name">Sony XS-FB693E 6x9 Speaker</div></div>
+      </div>
+
+      <div class="product-card reveal d3 tilt-card" data-cat="audio" data-name="JBL Stage3 600CFI Component Speakers — 500W">
+        <img src="speaker_jbl.jpg" alt="JBL Stage3 component speaker box">
+        <div class="pc-hint">⤢</div>
+        <div class="pc-overlay"><div class="pc-cat">Car Audio</div><div class="pc-name">JBL Stage3 Component Speakers</div></div>
+      </div>
+
+      <div class="product-card reveal d4 tilt-card" data-cat="audio" data-name="DD Audio Redline Series Speakers">
+        <img src="speaker_dd.jpg" alt="DD Audio Redline series speaker boxes">
+        <div class="pc-hint">⤢</div>
+        <div class="pc-overlay"><div class="pc-cat">Car Audio</div><div class="pc-name">DD Audio Redline Series</div></div>
+      </div>
+
+      <div class="product-card reveal d5 tilt-card" data-cat="audio" data-name="Blaupunkt Key Largo 980 Android Touchscreen Unit">
+        <img src="headunit_blaupunkt.jpg" alt="Blaupunkt Key Largo 980 head unit box">
+        <div class="pc-hint">⤢</div>
+        <div class="pc-overlay"><div class="pc-cat">Car Audio</div><div class="pc-name">Blaupunkt Key Largo 980</div></div>
+      </div>
+
+      <div class="product-card reveal tilt-card" data-cat="audio" data-name="Diamond X80 Android Apple CarPlay Unit">
+        <img src="headunit_diamond.jpg" alt="Diamond X80 android carplay touchscreen unit">
+        <div class="pc-hint">⤢</div>
+        <div class="pc-overlay"><div class="pc-cat">Car Audio</div><div class="pc-name">Diamond X80 CarPlay Unit</div></div>
+      </div>
+
+      <div class="product-card reveal d1 tilt-card" data-cat="performance" data-name="Valvetronic Remote-Control Exhaust — Black Heated Blue Carbon">
+        <img src="exhaust_valvetronic.jpg" alt="Valvetronic exhaust with remote control">
+        <div class="pc-hint">⤢</div>
+        <div class="pc-overlay"><div class="pc-cat">Performance</div><div class="pc-name">Valvetronic Exhaust, Remote-Control</div></div>
+      </div>
+
+      <div class="product-card reveal d2 tilt-card" data-cat="accessories" data-name="In-Store Accessories Wall">
+        <img src="accessories_wall.jpg" alt="Shop accessories display wall">
+        <div class="pc-hint">⤢</div>
+        <div class="pc-overlay"><div class="pc-cat">Accessories</div><div class="pc-name">In-Store Accessories Wall</div></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= LIGHTBOX ================= -->
+<div class="lightbox" id="lightbox">
+  <div class="lb-close" id="lbClose">✕</div>
+  <div class="lb-stage">
+    <div class="lb-frame" id="lbFrame">
+      <img id="lbImg" src="" alt="">
+      <div class="lb-sheen" id="lbSheen"></div>
+    </div>
+    <div class="lb-caption">
+      <div class="name" id="lbName"></div>
+      <div class="hint">Drag / move your mouse to tilt in 3D</div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= BRANDS MARQUEE ================= -->
+<section class="brands">
+  <div class="marquee" id="marquee">
+    <span>SONY</span><span>PIONEER</span><span>GALIO</span><span>JBL</span>
+    <span>SONY</span><span>PIONEER</span><span>GALIO</span><span>JBL</span>
+    <span>SONY</span><span>PIONEER</span><span>GALIO</span><span>JBL</span>
+  </div>
+</section>
+
+<!-- ================= GALLERY ================= -->
+<section id="gallery">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="kicker">Visit us</div>
+      <h2>Step inside the shop</h2>
+    </div>
+    <div class="gallery-feature reveal">
+      <div class="gallery-main tilt-card">
+        <img src="shopfront.jpg" alt="Maya Car Accessories shop front, Nadaun">
+      </div>
+      <div class="gallery-side">
+        <div class="info-tile tilt-card">
+          <div class="big">Sony · Pioneer</div>
+          <div class="lbl">Galio · JBL — authorised stock</div>
+        </div>
+        <div class="info-tile tilt-card">
+          <div class="big">Nadaun</div>
+          <div class="lbl">Seri, Culture Road, Hamirpur, HP</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WORK VIDEOS ================= -->
+<section id="work">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="kicker">See it in motion</div>
+      <h2>Our work, on camera</h2>
+      <p>Real clips from the shop floor.</p>
+    </div>
+    <div class="video-grid tilt-scroll">
+      <div class="video-card reveal d1">
+        <video controls preload="metadata" poster="work-1_poster.jpg">
+          <source src="work-1.mp4" type="video/mp4">
+        </video>
+        <div class="vc-label"><div class="vc-cat">Shop Work</div><div class="vc-name">Work Clip 1</div></div>
+      </div>
+      <div class="video-card reveal d2">
+        <video controls preload="metadata" poster="work-2_poster.jpg">
+          <source src="work-2.mp4" type="video/mp4">
+        </video>
+        <div class="vc-label"><div class="vc-cat">Shop Work</div><div class="vc-name">Work Clip 2</div></div>
+      </div>
+      <div class="video-card reveal d3">
+        <video controls preload="metadata" poster="work-3_poster.jpg">
+          <source src="work-3.mp4" type="video/mp4">
+        </video>
+        <div class="vc-label"><div class="vc-cat">Seat Covers</div><div class="vc-name">Seat Cover Installation</div></div>
+      </div>
+      <div class="video-card reveal d4">
+        <video controls preload="metadata" poster="work-4_poster.jpg">
+          <source src="work-4.mp4" type="video/mp4">
+        </video>
+        <div class="vc-label"><div class="vc-cat">Shop Work</div><div class="vc-name">Work Clip 4</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="kicker">Get in touch</div>
+      <h2>Come visit, or reach out first</h2>
+      <p>Call ahead, WhatsApp us your requirement, or drop by the shop directly.</p>
+    </div>
+    <div class="contact-grid tilt-scroll">
+      <div class="contact-card reveal d1">
+        <div class="contact-row">
+          <div class="ic">📞</div>
+          <div><div class="t">Primary</div><a class="v" href="tel:+916230072984">6230072984</a></div>
+        </div>
+        <div class="contact-row">
+          <div class="ic">📞</div>
+          <div><div class="t">Alternate</div><a class="v" href="tel:+919418031500">9418031500</a></div>
+        </div>
+        <div class="contact-row">
+          <div class="ic">📍</div>
+          <div><div class="t">Address</div><div class="v">Seri, Culture Road, Nadaun, Hamirpur, Himachal Pradesh</div></div>
+        </div>
+        <div class="contact-row">
+          <div class="ic">🕘</div>
+          <div><div class="t">Shop Timing</div><div class="v">9:30 AM – 7:00 PM</div></div>
+        </div>
+        <div class="contact-row">
+          <div class="ic">🏷️</div>
+          <div><div class="t">Brands stocked</div><div class="v">Sony · Pioneer · Galio · JBL</div></div>
+        </div>
+        <div class="contact-actions">
+          <a href="https://wa.me/916230072984" target="_blank" rel="noopener" class="btn btn-primary">WhatsApp 6230072984</a>
+          <a href="tel:+919418031500" class="btn btn-ghost">Call 9418031500</a>
+        </div>
+      </div>
+      <div class="map-wrap reveal d2">
+        <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=Maya+Car+Accessories+and+Modification+Nadaun+Hamirpur&output=embed">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;width:100%;">
+    <div class="f-brand">MAYA CAR ACCESSORIES &amp; MODIFICATION</div>
+    <p>Seri, Culture Road, Nadaun, Hamirpur, HP · 6230072984 / 9418031500</p>
+  </div>
+</footer>
+
+<script>
+// ---------- Layered 3D parallax across the whole hero scene ----------
+const layer = document.getElementById('parallaxLayer');
+const hero = document.getElementById('hero');
+const stack = document.getElementById('stack3d');
+const heroCopy = document.getElementById('heroCopy');
+const stackPanels = stack ? stack.querySelectorAll('.panel[data-depth]') : [];
+
+const PANEL_BASE = {
+  photo: 'translateZ(0px) rotateY(-6deg) rotateX(4deg)',
+  audio: 'translateZ(70px) rotateY(-10deg) rotateX(-2deg) rotate(-3deg)',
+  brand: 'translateZ(90px) rotateY(10deg) rotateX(6deg) rotate(2deg)'
+};
+
+let targetX = 0, targetY = 0, curX = 0, curY = 0;
+
+hero.addEventListener('mousemove', (e) => {
+  const rect = hero.getBoundingClientRect();
+  targetX = ((e.clientX - rect.left) / rect.width - 0.5) * 2;   // -1 .. 1
+  targetY = ((e.clientY - rect.top) / rect.height - 0.5) * 2;   // -1 .. 1
+});
+hero.addEventListener('mouseleave', () => { targetX = 0; targetY = 0; });
+
+function animateScene(){
+  // smooth easing toward target for a fluid, physical feel
+  curX += (targetX - curX) * 0.06;
+  curY += (targetY - curY) * 0.06;
+
+  // background glow/beam layer drifts opposite (far background)
+  layer.style.transform = `translate(${curX * -22}px, ${curY * -22}px)`;
+
+  // whole 3D stack rotates in perspective toward the cursor
+  if (stack){
+    stack.style.transform = `rotateY(${curX * 14}deg) rotateX(${curY * -12}deg)`;
+    stackPanels.forEach(p => {
+      const depth = parseFloat(p.dataset.depth) * 260; // px of travel for this layer
+      const base = PANEL_BASE[p.className.match(/panel-(\w+)/)[1]] || '';
+      p.style.transform = `${base} translate3d(${curX * depth}px, ${curY * depth}px, 0)`;
+    });
+  }
+
+  // hero copy gets a very subtle tilt for depth-of-field feel
+  if (heroCopy){
+    heroCopy.style.transform = `rotateY(${curX * 3}deg) rotateX(${curY * -2.5}deg)`;
+  }
+
+  requestAnimationFrame(animateScene);
+}
+requestAnimationFrame(animateScene);
+
+// ---------- Scroll reveal ----------
+const revealEls = document.querySelectorAll('.reveal');
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('in');
+      io.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.15 });
+revealEls.forEach(el => io.observe(el));
+
+// ---------- 3D tilt on any tilt-card / service card ----------
+document.querySelectorAll('.card, .tilt-card').forEach(card => {
+  card.addEventListener('mousemove', (e) => {
+    const rect = card.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    const rx = ((y / rect.height) - 0.5) * -12;
+    const ry = ((x / rect.width) - 0.5) * 12;
+    card.style.transform = `perspective(700px) rotateX(${rx}deg) rotateY(${ry}deg) translateY(-4px) scale(1.015)`;
+  });
+  card.addEventListener('mouseleave', () => {
+    card.style.transform = 'perspective(700px) rotateX(0) rotateY(0) translateY(0) scale(1)';
+  });
+});
+
+// ---------- Product category filter ----------
+const catTabs = document.querySelectorAll('.cat-tab');
+catTabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    catTabs.forEach(t => t.classList.remove('active'));
+    tab.classList.add('active');
+    const cat = tab.dataset.cat;
+    document.querySelectorAll('.product-card').forEach(card => {
+      const show = (cat === 'all' || card.dataset.cat === cat);
+      card.hidden = !show;
+    });
+  });
+});
+
+// ---------- Lightbox: open on product click ----------
+const lightbox = document.getElementById('lightbox');
+const lbImg = document.getElementById('lbImg');
+const lbName = document.getElementById('lbName');
+const lbFrame = document.getElementById('lbFrame');
+const lbSheen = document.getElementById('lbSheen');
+const lbClose = document.getElementById('lbClose');
+
+document.querySelectorAll('.product-card').forEach(card => {
+  card.addEventListener('click', () => {
+    const img = card.querySelector('img');
+    lbImg.src = img.src;
+    lbImg.alt = img.alt;
+    lbName.textContent = card.dataset.name || img.alt;
+    lbFrame.style.transform = 'rotateX(0deg) rotateY(0deg)';
+    lightbox.classList.add('open');
+  });
+});
+
+function closeLightbox(){ lightbox.classList.remove('open'); }
+lbClose.addEventListener('click', closeLightbox);
+lightbox.addEventListener('click', (e) => { if (e.target === lightbox) closeLightbox(); });
+document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeLightbox(); });
+
+// Drag / move to tilt the product in the lightbox (mouse + touch via Pointer Events)
+let lbDragging = false;
+function tiltFromPoint(clientX, clientY){
+  const rect = lbFrame.getBoundingClientRect();
+  const px = (clientX - rect.left) / rect.width;   // 0..1
+  const py = (clientY - rect.top) / rect.height;   // 0..1
+  const ry = (px - 0.5) * 34;   // rotateY range
+  const rx = (py - 0.5) * -26;  // rotateX range
+  lbFrame.style.transform = `rotateX(${rx}deg) rotateY(${ry}deg)`;
+  lbSheen.style.transform = `translateX(${(px - 0.5) * 60}px) translateY(${(py - 0.5) * 60}px)`;
+}
+lbFrame.addEventListener('pointerdown', (e) => { lbDragging = true; lbFrame.setPointerCapture(e.pointerId); });
+lbFrame.addEventListener('pointermove', (e) => {
+  if (!lbDragging) { tiltFromPoint(e.clientX, e.clientY); return; } // desktop: react to hover too
+  tiltFromPoint(e.clientX, e.clientY);
+});
+lbFrame.addEventListener('pointerup', () => { lbDragging = false; });
+lbFrame.addEventListener('pointerleave', () => {
+  if (!lbDragging){ lbFrame.style.transform = 'rotateX(0deg) rotateY(0deg)'; }
+});
+
+// ---------- Continuous scroll-driven 3D tilt (whole page feels 3D while scrolling) ----------
+const tiltScrollEls = document.querySelectorAll('.tilt-scroll');
+function updateScrollTilt(){
+  const vh = window.innerHeight;
+  tiltScrollEls.forEach(el => {
+    const rect = el.getBoundingClientRect();
+    const center = rect.top + rect.height / 2;
+    const norm = (center - vh / 2) / (vh / 2);
+    const clamped = Math.max(-1, Math.min(1, norm));
+    el.style.transform = `perspective(1400px) rotateX(${clamped * -8}deg)`;
+  });
+  requestAnimationFrame(updateScrollTilt);
+}
+requestAnimationFrame(updateScrollTilt);
+const sparkField = document.getElementById('sparkField');
+const isSmall = window.innerWidth < 700;
+const sparkCount = isSmall ? 10 : 22;
+for (let i = 0; i < sparkCount; i++) {
+  const s = document.createElement('div');
+  s.className = 'spark';
+  const left = Math.random() * 100;
+  const delay = Math.random() * 9;
+  const duration = 6 + Math.random() * 6;
+  const drift = (Math.random() * 60 - 30) + 'px';
+  s.style.left = left + '%';
+  s.style.animationDelay = delay + 's';
+  s.style.animationDuration = duration + 's';
+  s.style.setProperty('--drift', drift);
+  sparkField.appendChild(s);
+}
+// ---------- Load editable content from content.json (CMS-controlled) ----------
+fetch('content.json?_=' + Date.now())
+  .then(r => r.json())
+  .then(data => {
+    const shop = data.shop || {};
+
+    // 1) Simple text/link find-and-replace across the whole page for shop fields.
+    //    This keeps every mention (nav, hero, about, contact, footer) in sync
+    //    without needing to hand-wire each spot.
+    const DEFAULTS = {
+      phone_primary: '6230072984',
+      phone_alternate: '9418031500',
+      address: 'Seri, Culture Road, Nadaun, Hamirpur, Himachal Pradesh',
+      timing: '9:30 AM – 7:00 PM',
+      hero_tagline_suffix: 'Done Right.',
+      hero_description: "Maya Car Accessories & Modification is Nadaun's trusted shop for alloy wheels, premium car audio, seat covers, lighting and full car mod work — run by Er. Anshul."
+    };
+
+    if (shop.phone_primary && shop.phone_primary !== DEFAULTS.phone_primary) {
+      document.querySelectorAll('a[href="tel:+91' + DEFAULTS.phone_primary + '"]').forEach(a => a.href = 'tel:+91' + shop.phone_primary);
+      document.querySelectorAll('a[href*="wa.me/91' + DEFAULTS.phone_primary + '"]').forEach(a => a.href = a.href.replace('91' + DEFAULTS.phone_primary, '91' + shop.phone_primary));
+    }
+    if (shop.phone_alternate && shop.phone_alternate !== DEFAULTS.phone_alternate) {
+      document.querySelectorAll('a[href="tel:+91' + DEFAULTS.phone_alternate + '"]').forEach(a => a.href = 'tel:+91' + shop.phone_alternate);
+    }
+
+    const textReplacements = [
+      [DEFAULTS.phone_primary, shop.phone_primary],
+      [DEFAULTS.phone_alternate, shop.phone_alternate],
+      [DEFAULTS.address, shop.address],
+      [DEFAULTS.timing, shop.timing],
+      [DEFAULTS.hero_description, shop.hero_description]
+    ].filter(([oldV, newV]) => newV && oldV !== newV);
+
+    if (textReplacements.length) {
+      const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+      let node;
+      while (node = walker.nextNode()) {
+        let text = node.nodeValue;
+        let changed = false;
+        textReplacements.forEach(([oldV, newV]) => {
+          if (text.includes(oldV)) { text = text.split(oldV).join(newV); changed = true; }
+        });
+        if (changed) node.nodeValue = text;
+      }
+    }
+
+    // 2) Rebuild the product grid from content.json so add/remove/edit works.
+    if (Array.isArray(data.products) && data.products.length) {
+      const grid = document.getElementById('productGrid');
+      if (grid) {
+        grid.innerHTML = data.products.map((p, i) => `
+          <div class="product-card reveal tilt-card" data-cat="${p.category}" data-name="${p.name.replace(/"/g,'&quot;')}">
+            <img src="${p.image}" alt="${p.name.replace(/"/g,'&quot;')}">
+            <div class="pc-hint">⤢</div>
+            <div class="pc-overlay"><div class="pc-cat">${p.category_label}</div><div class="pc-name">${p.name}</div></div>
+          </div>
+        `).join('');
+        // Re-bind interactions for the freshly rendered cards
+        initProductInteractions();
+      }
+    }
+
+    // 3) Rebuild the video grid from content.json.
+    if (Array.isArray(data.videos) && data.videos.length) {
+      const vgrid = document.querySelector('#work .video-grid');
+      if (vgrid) {
+        vgrid.innerHTML = data.videos.map(v => `
+          <div class="video-card reveal">
+            <video controls preload="metadata" poster="${v.poster}">
+              <source src="${v.video}" type="video/mp4">
+            </video>
+            <div class="vc-label"><div class="vc-cat">${v.category}</div><div class="vc-name">${v.name}</div></div>
+          </div>
+        `).join('');
+        vgrid.querySelectorAll('.reveal').forEach(el => io.observe(el));
+      }
+    }
+  })
+  .catch(err => console.warn('content.json not loaded, showing defaults', err));
+
+// Re-attach category filter + lightbox click handlers after dynamic re-render
+function initProductInteractions(){
+  const freshCards = document.querySelectorAll('.product-card');
+  const activeTab = document.querySelector('.cat-tab.active');
+  const activeCat = activeTab ? activeTab.dataset.cat : 'all';
+  freshCards.forEach(card => {
+    card.hidden = !(activeCat === 'all' || card.dataset.cat === activeCat);
+    card.addEventListener('mousemove', (e) => {
+      const rect = card.getBoundingClientRect();
+      const x = e.clientX - rect.left, y = e.clientY - rect.top;
+      const rx = ((y / rect.height) - 0.5) * -12;
+      const ry = ((x / rect.width) - 0.5) * 12;
+      card.style.transform = `perspective(700px) rotateX(${rx}deg) rotateY(${ry}deg) translateY(-4px) scale(1.015)`;
+    });
+    card.addEventListener('mouseleave', () => { card.style.transform = 'perspective(700px) rotateX(0) rotateY(0) translateY(0) scale(1)'; });
+    card.addEventListener('click', () => {
+      const img = card.querySelector('img');
+      lbImg.src = img.src; lbImg.alt = img.alt;
+      lbName.textContent = card.dataset.name || img.alt;
+      lbFrame.style.transform = 'rotateX(0deg) rotateY(0deg)';
+      lightbox.classList.add('open');
+    });
+    io.observe(card);
+  });
+}
+</script>
+</body>
+</html>

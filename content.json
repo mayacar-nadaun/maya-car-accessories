@@ -1,0 +1,130 @@
+{
+  "shop": {
+    "name": "Maya Car Accessories & Modification",
+    "owner": "Er. Anshul",
+    "phone_primary": "6230072984",
+    "phone_alternate": "9418031500",
+    "address": "Seri, Culture Road, Nadaun, Hamirpur, Himachal Pradesh",
+    "timing": "9:30 AM \u2013 7:00 PM",
+    "hero_tagline": "Wheels, Audio & Modification, Done Right.",
+    "hero_description": "Maya Car Accessories & Modification is Nadaun's trusted shop for alloy wheels, premium car audio, seat covers, lighting and full car mod work \u2014 run by Er. Anshul."
+  },
+  "products": [
+    {
+      "category": "seat",
+      "category_label": "Seat Covers",
+      "name": "Blue Sport Seat Covers",
+      "image": "seat_blue.jpg"
+    },
+    {
+      "category": "seat",
+      "category_label": "Seat Covers",
+      "name": "Brown Premium Seat Covers",
+      "image": "seat_brown.jpg"
+    },
+    {
+      "category": "seat",
+      "category_label": "Seat Covers",
+      "name": "Seat Covers + Ambient Lighting",
+      "image": "seat_ambient.jpg"
+    },
+    {
+      "category": "seat",
+      "category_label": "Seat Covers",
+      "name": "Black & Maroon Seat Cover",
+      "image": "seat_black_maroon.jpg"
+    },
+    {
+      "category": "seat",
+      "category_label": "Seat Covers",
+      "name": "White Diamond-Stitch Cover",
+      "image": "seat_white.jpg"
+    },
+    {
+      "category": "steering",
+      "category_label": "Steering Wheels",
+      "name": "MOMO Sport \u2014 4 Finishes",
+      "image": "steering_4color.jpg"
+    },
+    {
+      "category": "wheels",
+      "category_label": "Alloy Wheels",
+      "name": "Toyota OEM Wheel Set",
+      "image": "wheels_toyota_set.jpg"
+    },
+    {
+      "category": "wheels",
+      "category_label": "Alloy Wheels",
+      "name": "Factory-Packed Alloy Wheel",
+      "image": "wheel_single_box.jpg"
+    },
+    {
+      "category": "audio",
+      "category_label": "Car Audio",
+      "name": "Sony XS-FB693E 6x9 Speaker",
+      "image": "speaker_sony.jpg"
+    },
+    {
+      "category": "audio",
+      "category_label": "Car Audio",
+      "name": "JBL Stage3 Component Speakers",
+      "image": "speaker_jbl.jpg"
+    },
+    {
+      "category": "audio",
+      "category_label": "Car Audio",
+      "name": "DD Audio Redline Series",
+      "image": "speaker_dd.jpg"
+    },
+    {
+      "category": "audio",
+      "category_label": "Car Audio",
+      "name": "Blaupunkt Key Largo 980",
+      "image": "headunit_blaupunkt.jpg"
+    },
+    {
+      "category": "audio",
+      "category_label": "Car Audio",
+      "name": "Diamond X80 CarPlay Unit",
+      "image": "headunit_diamond.jpg"
+    },
+    {
+      "category": "performance",
+      "category_label": "Performance",
+      "name": "Valvetronic Exhaust, Remote-Control",
+      "image": "exhaust_valvetronic.jpg"
+    },
+    {
+      "category": "accessories",
+      "category_label": "Accessories",
+      "name": "In-Store Accessories Wall",
+      "image": "accessories_wall.jpg"
+    }
+  ],
+  "videos": [
+    {
+      "name": "Work Clip 1",
+      "category": "Shop Work",
+      "video": "work-1.mp4",
+      "poster": "work-1_poster.jpg"
+    },
+    {
+      "name": "Work Clip 2",
+      "category": "Shop Work",
+      "video": "work-2.mp4",
+      "poster": "work-2_poster.jpg"
+    },
+    {
+      "name": "Seat Cover Installation",
+      "category": "Seat Covers",
+      "video": "work-3.mp4",
+      "poster": "work-3_poster.jpg"
+    },
+    {
+      "name": "Work Clip 4",
+      "category": "Shop Work",
+      "video": "work-4.mp4",
+      "poster": "work-4_poster.jpg"
+    }
+  ]
+}
